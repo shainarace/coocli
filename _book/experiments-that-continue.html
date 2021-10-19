@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>7 Experiments that Continue | COOCLI Survey Analysis</title>
+  <meta name="description" content="Shaina’s analytical results from the COOCLI survey." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="7 Experiments that Continue | COOCLI Survey Analysis" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Shaina’s analytical results from the COOCLI survey." />
+  <meta name="github-repo" content="rstudio/coocli-master" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="7 Experiments that Continue | COOCLI Survey Analysis" />
+  
+  <meta name="twitter:description" content="Shaina’s analytical results from the COOCLI survey." />
+  
+
+<meta name="author" content="Shaina Race Bennett" />
+
+
+<meta name="date" content="2020-12-16" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="complete-county-profiles.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="libs/d3-4.5.0/d3.min.js"></script>
+<script src="libs/sankey-1/sankey.js"></script>
+<script src="libs/sankeyNetwork-binding-0.4/sankeyNetwork.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">COOCLI Survey</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Goals for Research</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="rurality-and-law.html"><a href="rurality-and-law.html"><i class="fa fa-check"></i><b>1</b> Rurality and Law</a><ul>
+<li class="chapter" data-level="1.1" data-path="rurality-and-law.html"><a href="rurality-and-law.html#conclusions-from-this-analysis"><i class="fa fa-check"></i><b>1.1</b> Conclusions from this analysis</a></li>
+<li class="chapter" data-level="1.2" data-path="rurality-and-law.html"><a href="rurality-and-law.html#analysis"><i class="fa fa-check"></i><b>1.2</b> Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="other-rurality.html"><a href="other-rurality.html"><i class="fa fa-check"></i><b>2</b> Other Rurality</a><ul>
+<li class="chapter" data-level="2.1" data-path="other-rurality.html"><a href="other-rurality.html#conclusions-from-this-analysis-1"><i class="fa fa-check"></i><b>2.1</b> Conclusions from this Analysis</a></li>
+<li class="chapter" data-level="2.2" data-path="other-rurality.html"><a href="other-rurality.html#analysis-1"><i class="fa fa-check"></i><b>2.2</b> Analysis</a></li>
+<li class="chapter" data-level="2.3" data-path="other-rurality.html"><a href="other-rurality.html#statements"><i class="fa fa-check"></i><b>2.3</b> Statements</a></li>
+<li class="chapter" data-level="2.4" data-path="other-rurality.html"><a href="other-rurality.html#barriers-to-treatment"><i class="fa fa-check"></i><b>2.4</b> Barriers to Treatment</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="race-and-statements-about-law-enforcement.html"><a href="race-and-statements-about-law-enforcement.html"><i class="fa fa-check"></i><b>3</b> Race and Statements about Law Enforcement</a><ul>
+<li class="chapter" data-level="3.1" data-path="race-and-statements-about-law-enforcement.html"><a href="race-and-statements-about-law-enforcement.html#conclusions-from-this-analysis-2"><i class="fa fa-check"></i><b>3.1</b> Conclusions from this analysis</a></li>
+<li class="chapter" data-level="3.2" data-path="race-and-statements-about-law-enforcement.html"><a href="race-and-statements-about-law-enforcement.html#analysis-2"><i class="fa fa-check"></i><b>3.2</b> Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html"><i class="fa fa-check"></i><b>4</b> Drug-use profiles</a><ul>
+<li class="chapter" data-level="4.1" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html#conclusions-from-this-analysis-3"><i class="fa fa-check"></i><b>4.1</b> Conclusions from this analysis</a></li>
+<li class="chapter" data-level="4.2" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html#analysis-3"><i class="fa fa-check"></i><b>4.2</b> Analysis</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html#rurality"><i class="fa fa-check"></i><b>4.2.1</b> Rurality</a></li>
+<li class="chapter" data-level="4.2.2" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html#services-of-interest"><i class="fa fa-check"></i><b>4.2.2</b> Services of Interest</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="sample-sizes-across-key-demographics.html"><a href="sample-sizes-across-key-demographics.html"><i class="fa fa-check"></i><b>5</b> Sample Sizes across key demographics</a><ul>
+<li class="chapter" data-level="5.1" data-path="sample-sizes-across-key-demographics.html"><a href="sample-sizes-across-key-demographics.html#conclusions-from-this-analysis-4"><i class="fa fa-check"></i><b>5.1</b> Conclusions from this analysis</a></li>
+<li class="chapter" data-level="5.2" data-path="sample-sizes-across-key-demographics.html"><a href="sample-sizes-across-key-demographics.html#analysis-4"><i class="fa fa-check"></i><b>5.2</b> Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html"><i class="fa fa-check"></i><b>6</b> Complete County Profiles</a><ul>
+<li class="chapter" data-level="6.1" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#harm-reduction-profiles-of-each-county"><i class="fa fa-check"></i><b>6.1</b> Harm Reduction Profiles of each county</a></li>
+<li class="chapter" data-level="6.2" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#reasons-for-using-exchange"><i class="fa fa-check"></i><b>6.2</b> Reasons for Using Exchange</a></li>
+<li class="chapter" data-level="6.3" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#law-enforcement-interaction"><i class="fa fa-check"></i><b>6.3</b> Law Enforcement Interaction</a></li>
+<li class="chapter" data-level="6.4" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#statements-1"><i class="fa fa-check"></i><b>6.4</b> Statements</a></li>
+<li class="chapter" data-level="6.5" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#services-of-interest-1"><i class="fa fa-check"></i><b>6.5</b> Services of Interest</a></li>
+<li class="chapter" data-level="6.6" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#frequency"><i class="fa fa-check"></i><b>6.6</b> Frequency</a></li>
+<li class="chapter" data-level="6.7" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#tenure"><i class="fa fa-check"></i><b>6.7</b> Tenure</a></li>
+<li class="chapter" data-level="6.8" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#age-distribution"><i class="fa fa-check"></i><b>6.8</b> Age Distribution</a></li>
+<li class="chapter" data-level="6.9" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#gender-distribution"><i class="fa fa-check"></i><b>6.9</b> Gender Distribution</a></li>
+<li class="chapter" data-level="6.10" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#raceethnicity-distribution"><i class="fa fa-check"></i><b>6.10</b> Race/Ethnicity Distribution</a></li>
+<li class="chapter" data-level="6.11" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#tenure-and-frequency"><i class="fa fa-check"></i><b>6.11</b> Tenure and Frequency</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="experiments-that-continue.html"><a href="experiments-that-continue.html"><i class="fa fa-check"></i><b>7</b> Experiments that Continue</a><ul>
+<li class="chapter" data-level="7.1" data-path="experiments-that-continue.html"><a href="experiments-that-continue.html#conclusions-from-this-section"><i class="fa fa-check"></i><b>7.1</b> Conclusions from this section</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">COOCLI Survey Analysis</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="experiments-that-continue" class="section level1">
+<h1><span class="header-section-number">7</span> Experiments that Continue</h1>
+<div id="conclusions-from-this-section" class="section level2">
+<h2><span class="header-section-number">7.1</span> Conclusions from this section</h2>
+<ul>
+<li>Check back when I’ve found something.</li>
+</ul>
+<pre><code>## Loading required package: gsubfn</code></pre>
+<pre><code>## Loading required package: proto</code></pre>
+<pre><code>## Warning in fun(libname, pkgname): couldn&#39;t connect to display &quot;/private/tmp/
+## com.apple.launchd.VOQcHOaJiK/org.macosforge.xquartz:0&quot;</code></pre>
+<pre><code>## Loading required package: RSQLite</code></pre>
+<pre><code>## 
+## Attaching package: &#39;htmlwidgets&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:networkD3&#39;:
+## 
+##     JS</code></pre>
+<pre><code>##                            
+## SoughtTreatmentUnableAccess FALSE TRUE
+##                           0   194    0
+##                           1   196    2</code></pre>
+<pre><code>##                            SoughtDetoxOnly
+## SoughtTreatmentUnableAccess   0   1
+##                           0 189   5
+##                           1 153  45</code></pre>
+<pre><code>##                            SoughtMethadone
+## SoughtTreatmentUnableAccess   0   1
+##                           0 190   4
+##                           1 123  75</code></pre>
+<pre><code>##                            SoughtNaltrexone
+## SoughtTreatmentUnableAccess   0   1
+##                           0 192   2
+##                           1 187  11</code></pre>
+<pre><code>##                            SoughtSuboxone
+## SoughtTreatmentUnableAccess   0   1
+##                           0 190   4
+##                           1 140  58</code></pre>
+<pre><code>##                            SoughtInpatientResidentialTreatment.
+## SoughtTreatmentUnableAccess   0   1
+##                           0 188   6
+##                           1  97 101</code></pre>
+<pre><code>##                            SoughtOther
+## SoughtTreatmentUnableAccess   0   1
+##                           0 187   7
+##                           1 182  16</code></pre>
+<div id="htmlwidget-edc661c958a75588c25d" style="width:672px;height:480px;" class="sankeyNetwork html-widget"></div>
+<script type="application/json" data-for="htmlwidget-edc661c958a75588c25d">{"x":{"links":{"source":[23,21,20,19,22,23,21,20,19,22,23,21,20,19,22,23,21,20,19,22,23,21,20,19,22,23,21,20,19,22,4,0,1,3,5,2,4,0,1,3,5,2,4,0,1,3,5,2,4,0,1,3,5,2,4,0,1,3,5,2,4,0,1,3,5,2,4,0,1,3,5,2,4,0,1,3,5,2,4,0,1,3,5,2,4,0,1,3,5,2,4,0,1,3,5,2,4,0,1,3,5,2,4,0,1,3,5,2,7,6,12,13,9,15,14,8,10,18,17,16,11,7,6,12,13,9,15,14,8,10,18,17,16,11,7,6,12,13,9,15,14,8,10,18,17,16,11,7,6,12,13,9,15,14,8,10,18,17,16,11,7,6,12,13,9,15,14,8,10,18,17,16,11],"target":[0,0,0,0,0,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,4,4,4,4,4,5,5,5,5,5,6,6,6,6,6,6,7,7,7,7,7,7,8,8,8,8,8,8,9,9,9,9,9,9,10,10,10,10,10,10,11,11,11,11,11,11,12,12,12,12,12,12,13,13,13,13,13,13,14,14,14,14,14,14,15,15,15,15,15,15,16,16,16,16,16,16,17,17,17,17,17,17,18,18,18,18,18,18,24,24,24,24,24,24,24,24,24,24,24,24,24,25,25,25,25,25,25,25,25,25,25,25,25,25,26,26,26,26,26,26,26,26,26,26,26,26,26,27,27,27,27,27,27,27,27,27,27,27,27,27,28,28,28,28,28,28,28,28,28,28,28,28,28],"value":[53,72,42,82,35,37,56,33,69,24,40,37,31,46,38,8,10,3,12,4,27,34,21,37,19,13,15,8,11,10,25,37,25,8,9,29,28,57,38,9,11,35,28,54,34,9,13,33,15,24,15,7,7,20,19,28,20,4,6,27,27,45,16,3,9,22,8,13,5,2,4,10,6,13,6,2,3,7,9,14,4,2,2,12,13,21,10,3,3,14,10,14,14,4,4,18,11,17,10,2,2,12,1,10,5,0,5,5,90,65,23,15,35,29,16,94,47,9,24,30,56,47,30,16,12,20,17,11,46,36,7,18,18,32,80,57,23,15,26,26,13,75,46,11,21,22,40,47,28,12,10,21,18,8,42,28,11,14,12,26,57,40,17,12,29,21,12,59,31,11,20,18,38]},"nodes":{"name":["Inpatient_Residential","Methadone","Suboxone","Naltrexone","Detox_Only","Other_Treatment","Didnt know where","Cost Too Much","No Insurance","Ins. won't cover","No Ride","Waiting List","Documents/ID","Full Abstinence","No Group","Long Process","Too Many Appts","Shamed","Other Barrier","opioids","mats","cocaine","stimulants","benzos","opioids_","mats_","cocaine_","stimulants_","benzos_"],"group":["Inpatient_Residential","Methadone","Suboxone","Naltrexone","Detox_Only","Other_Treatment","Didnt know where","Cost Too Much","No Insurance","Ins. won't cover","No Ride","Waiting List","Documents/ID","Full Abstinence","No Group","Long Process","Too Many Appts","Shamed","Other Barrier","opioids","mats","cocaine","stimulants","benzos","opioids_","mats_","cocaine_","stimulants_","benzos_"]},"options":{"NodeID":"name","NodeGroup":"name","LinkGroup":null,"colourScale":"d3.scaleOrdinal(d3.schemeCategory20);","fontSize":12,"fontFamily":null,"nodeWidth":30,"nodePadding":10,"units":"","margin":{"top":null,"right":null,"bottom":null,"left":null},"iterations":32,"sinksRight":true}},"evals":[],"jsHooks":[]}</script>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="complete-county-profiles.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/07-sankeys.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["coocli.pdf", "coocli.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
