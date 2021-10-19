@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5 Sample Sizes across key demographics | COOCLI Survey Analysis</title>
+  <meta name="description" content="Shaina’s analytical results from the COOCLI survey." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="5 Sample Sizes across key demographics | COOCLI Survey Analysis" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Shaina’s analytical results from the COOCLI survey." />
+  <meta name="github-repo" content="rstudio/coocli-master" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="5 Sample Sizes across key demographics | COOCLI Survey Analysis" />
+  
+  <meta name="twitter:description" content="Shaina’s analytical results from the COOCLI survey." />
+  
+
+<meta name="author" content="Shaina Race Bennett" />
+
+
+<meta name="date" content="2020-12-16" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="drug-use-profiles.html"/>
+<link rel="next" href="complete-county-profiles.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="libs/d3-4.5.0/d3.min.js"></script>
+<script src="libs/sankey-1/sankey.js"></script>
+<script src="libs/sankeyNetwork-binding-0.4/sankeyNetwork.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">COOCLI Survey</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Goals for Research</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="rurality-and-law.html"><a href="rurality-and-law.html"><i class="fa fa-check"></i><b>1</b> Rurality and Law</a><ul>
+<li class="chapter" data-level="1.1" data-path="rurality-and-law.html"><a href="rurality-and-law.html#conclusions-from-this-analysis"><i class="fa fa-check"></i><b>1.1</b> Conclusions from this analysis</a></li>
+<li class="chapter" data-level="1.2" data-path="rurality-and-law.html"><a href="rurality-and-law.html#analysis"><i class="fa fa-check"></i><b>1.2</b> Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="other-rurality.html"><a href="other-rurality.html"><i class="fa fa-check"></i><b>2</b> Other Rurality</a><ul>
+<li class="chapter" data-level="2.1" data-path="other-rurality.html"><a href="other-rurality.html#conclusions-from-this-analysis-1"><i class="fa fa-check"></i><b>2.1</b> Conclusions from this Analysis</a></li>
+<li class="chapter" data-level="2.2" data-path="other-rurality.html"><a href="other-rurality.html#analysis-1"><i class="fa fa-check"></i><b>2.2</b> Analysis</a></li>
+<li class="chapter" data-level="2.3" data-path="other-rurality.html"><a href="other-rurality.html#statements"><i class="fa fa-check"></i><b>2.3</b> Statements</a></li>
+<li class="chapter" data-level="2.4" data-path="other-rurality.html"><a href="other-rurality.html#barriers-to-treatment"><i class="fa fa-check"></i><b>2.4</b> Barriers to Treatment</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="race-and-statements-about-law-enforcement.html"><a href="race-and-statements-about-law-enforcement.html"><i class="fa fa-check"></i><b>3</b> Race and Statements about Law Enforcement</a><ul>
+<li class="chapter" data-level="3.1" data-path="race-and-statements-about-law-enforcement.html"><a href="race-and-statements-about-law-enforcement.html#conclusions-from-this-analysis-2"><i class="fa fa-check"></i><b>3.1</b> Conclusions from this analysis</a></li>
+<li class="chapter" data-level="3.2" data-path="race-and-statements-about-law-enforcement.html"><a href="race-and-statements-about-law-enforcement.html#analysis-2"><i class="fa fa-check"></i><b>3.2</b> Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html"><i class="fa fa-check"></i><b>4</b> Drug-use profiles</a><ul>
+<li class="chapter" data-level="4.1" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html#conclusions-from-this-analysis-3"><i class="fa fa-check"></i><b>4.1</b> Conclusions from this analysis</a></li>
+<li class="chapter" data-level="4.2" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html#analysis-3"><i class="fa fa-check"></i><b>4.2</b> Analysis</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html#rurality"><i class="fa fa-check"></i><b>4.2.1</b> Rurality</a></li>
+<li class="chapter" data-level="4.2.2" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html#services-of-interest"><i class="fa fa-check"></i><b>4.2.2</b> Services of Interest</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="sample-sizes-across-key-demographics.html"><a href="sample-sizes-across-key-demographics.html"><i class="fa fa-check"></i><b>5</b> Sample Sizes across key demographics</a><ul>
+<li class="chapter" data-level="5.1" data-path="sample-sizes-across-key-demographics.html"><a href="sample-sizes-across-key-demographics.html#conclusions-from-this-analysis-4"><i class="fa fa-check"></i><b>5.1</b> Conclusions from this analysis</a></li>
+<li class="chapter" data-level="5.2" data-path="sample-sizes-across-key-demographics.html"><a href="sample-sizes-across-key-demographics.html#analysis-4"><i class="fa fa-check"></i><b>5.2</b> Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html"><i class="fa fa-check"></i><b>6</b> Complete County Profiles</a><ul>
+<li class="chapter" data-level="6.1" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#harm-reduction-profiles-of-each-county"><i class="fa fa-check"></i><b>6.1</b> Harm Reduction Profiles of each county</a></li>
+<li class="chapter" data-level="6.2" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#reasons-for-using-exchange"><i class="fa fa-check"></i><b>6.2</b> Reasons for Using Exchange</a></li>
+<li class="chapter" data-level="6.3" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#law-enforcement-interaction"><i class="fa fa-check"></i><b>6.3</b> Law Enforcement Interaction</a></li>
+<li class="chapter" data-level="6.4" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#statements-1"><i class="fa fa-check"></i><b>6.4</b> Statements</a></li>
+<li class="chapter" data-level="6.5" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#services-of-interest-1"><i class="fa fa-check"></i><b>6.5</b> Services of Interest</a></li>
+<li class="chapter" data-level="6.6" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#frequency"><i class="fa fa-check"></i><b>6.6</b> Frequency</a></li>
+<li class="chapter" data-level="6.7" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#tenure"><i class="fa fa-check"></i><b>6.7</b> Tenure</a></li>
+<li class="chapter" data-level="6.8" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#age-distribution"><i class="fa fa-check"></i><b>6.8</b> Age Distribution</a></li>
+<li class="chapter" data-level="6.9" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#gender-distribution"><i class="fa fa-check"></i><b>6.9</b> Gender Distribution</a></li>
+<li class="chapter" data-level="6.10" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#raceethnicity-distribution"><i class="fa fa-check"></i><b>6.10</b> Race/Ethnicity Distribution</a></li>
+<li class="chapter" data-level="6.11" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#tenure-and-frequency"><i class="fa fa-check"></i><b>6.11</b> Tenure and Frequency</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="experiments-that-continue.html"><a href="experiments-that-continue.html"><i class="fa fa-check"></i><b>7</b> Experiments that Continue</a><ul>
+<li class="chapter" data-level="7.1" data-path="experiments-that-continue.html"><a href="experiments-that-continue.html#conclusions-from-this-section"><i class="fa fa-check"></i><b>7.1</b> Conclusions from this section</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">COOCLI Survey Analysis</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sample-sizes-across-key-demographics" class="section level1">
+<h1><span class="header-section-number">5</span> Sample Sizes across key demographics</h1>
+<div id="conclusions-from-this-analysis-4" class="section level2">
+<h2><span class="header-section-number">5.1</span> Conclusions from this analysis</h2>
+<ul>
+<li>Caucasians make up the bulk of responses for all levels of rurality. This is notably <em>untrue</em> in Durham, which is one of three counties that has a rural score of 2.</li>
+<li>74% of the Durham participants surveyed were black.</li>
+<li>59 out of of 89 (66% of) Black Respondents are from Durham.</li>
+</ul>
+</div>
+<div id="analysis-4" class="section level2">
+<h2><span class="header-section-number">5.2</span> Analysis</h2>
+<p>The following charts were designed to inform the reader as they process the other graphics in this document and want to get a rough idea of sample-sizes that were used for any calculation.</p>
+<p>Let’s kick it off with a quick look at the distribution of race and rurality and their intersection.</p>
+<p><img src="coocli_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+
+<p><img src="coocli_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+<p>74% of the Durham participants surveyed were black. This may have skewed the racial distribution in Durham, but provided a significant boost to the representation of black Americans in the survey overall, given that 59 (66%) of the 89 African Americans who responded to our survey were from Durham.</p>
+
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-26"></span>
+<img src="coocli_files/figure-html/unnamed-chunk-26-1.png" alt="74% of the Durham participants surveyed were black." width="672" />
+<p class="caption">
+Figure 5.1: 74% of the Durham participants surveyed were black.
+</p>
+</div>
+<p>I’m not sure I know how to compare this to what one might expect that we would get from a random sample of participants, unless we have a breakdown of demographics for all participants, which I don’t think we have.</p>
+
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-27"></span>
+<img src="coocli_files/figure-html/unnamed-chunk-27-1.png" alt="59 out of of 89 (66% of) Black Respondents are from Durham." width="672" />
+<p class="caption">
+Figure 5.2: 59 out of of 89 (66% of) Black Respondents are from Durham.
+</p>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="drug-use-profiles.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="complete-county-profiles.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/05-samplesize.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["coocli.pdf", "coocli.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

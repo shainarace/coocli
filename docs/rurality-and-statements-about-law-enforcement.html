@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1 Rurality and Statements about Law Enforcement | COOCLI Survey Analysis</title>
+  <meta name="description" content="Shaina’s analytical results from the COOCLI survey." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="1 Rurality and Statements about Law Enforcement | COOCLI Survey Analysis" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Shaina’s analytical results from the COOCLI survey." />
+  <meta name="github-repo" content="rstudio/coocli-master" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1 Rurality and Statements about Law Enforcement | COOCLI Survey Analysis" />
+  
+  <meta name="twitter:description" content="Shaina’s analytical results from the COOCLI survey." />
+  
+
+<meta name="author" content="Shaina Race Bennett" />
+
+
+<meta name="date" content="2020-12-04" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="race-and-statements-about-law-enforcement.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">COOCLI Survey</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Goals for Research</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="rurality-and-statements-about-law-enforcement.html"><a href="rurality-and-statements-about-law-enforcement.html"><i class="fa fa-check"></i><b>1</b> Rurality and Statements about Law Enforcement</a></li>
+<li class="chapter" data-level="2" data-path="race-and-statements-about-law-enforcement.html"><a href="race-and-statements-about-law-enforcement.html"><i class="fa fa-check"></i><b>2</b> Race and Statements about Law Enforcement</a></li>
+<li class="chapter" data-level="3" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html"><i class="fa fa-check"></i><b>3</b> Drug-use profiles</a></li>
+<li class="chapter" data-level="4" data-path="sample-sizes-across-key-demographics.html"><a href="sample-sizes-across-key-demographics.html"><i class="fa fa-check"></i><b>4</b> Sample Sizes across key demographics</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">COOCLI Survey Analysis</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="rurality-and-statements-about-law-enforcement" class="section level1">
+<h1><span class="header-section-number">1</span> Rurality and Statements about Law Enforcement</h1>
+<p>We’ll start by examining what proportion of respondents had <em>anything</em> to say about law enforcement. All of the interactions reported in the survey were negative (the survey did not ask about positive interactions). To test for differences in law enforcement interactions across different rurality scores, we considered a chi-square test on the binary attribute <code>lawSumgt0 = lawSum&gt;0</code>, which takes a value of 1 if that respondent made <em>any</em> complaint and a 0 if they made <em>no</em> complaints. For many reasons this is a good measurement of <em>breadth</em> of a problem with law enforcement (a number not influenced by a “few excessive complainers”).</p>
+
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-2"></span>
+<img src="coocli_files/figure-html/unnamed-chunk-2-1.png" alt="The number of participants identifying with at least one statement regarding Law Enforcement at first appears to have an ordinal relationship with rurality." width="672" />
+<p class="caption">
+Figure 1.1: The number of participants identifying with <em>at least one</em> statement regarding Law Enforcement at first appears to have an ordinal relationship with rurality.
+</p>
+</div>
+<p>A chi-squared test, which <em>does not</em> take into account the ordinality of <code>rural score</code>, does not find significant differences in the overall number of individuals identifying negative interactions about law Enforcement across levels of rurality.</p>
+<pre><code>## 
+##  Pearson&#39;s Chi-squared test with simulated p-value (based on 2000
+##  replicates)
+## 
+## data:  table(rural.fac, lawSumgt0)
+## X-squared = 6.0141, df = NA, p-value = 0.1124</code></pre>
+<pre><code>##            Chisq Df       Prob
+## cor     3.698450  1 0.05446305
+## rmeans  5.999568  3 0.11163122
+## cmeans  3.698450  1 0.05446305
+## general 5.999568  3 0.11163122</code></pre>
+<pre><code>## 
+## Call:
+## glm(formula = lawSumgt0 ~ rural, family = &quot;binomial&quot;, data = coocli)
+## 
+## Deviance Residuals: 
+##    Min      1Q  Median      3Q     Max  
+## -1.324  -1.134   1.038   1.221   1.317  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)  
+## (Intercept)  -0.5416     0.3036  -1.784   0.0744 .
+## rural         0.2198     0.1145   1.919   0.0550 .
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 573.92  on 413  degrees of freedom
+## Residual deviance: 570.20  on 412  degrees of freedom
+## AIC: 574.2
+## 
+## Number of Fisher Scoring iterations: 3</code></pre>
+<p>However, the first row of the second table below, which tests for a linear relationship, compels us to explore further - as there does appear to be some linear relationship between prevalence of law enforcement complaints and rurality. However, as we will see in the next section, that relationship disappears after the removal of a few key questions in Haywood county.</p>
+<p>Diving Deeper, we see that the average <em>number of complaints</em> involving law enforcement do not follow the same pattern. Although you’ll notice that in Haywood (that’d be rural score = 4) complaints averaged over 1 per survey response, which is notable given the distribution of responses across the other rural scores.</p>
+
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-4"></span>
+<img src="coocli_files/figure-html/unnamed-chunk-4-1.png" alt="The average number of complaints involving law enforcement do not follow the pattern we saw when looking at the proportion of participants who made any complaints" width="672" />
+<p class="caption">
+Figure 1.2: The average <em>number of complaints</em> involving law enforcement do not follow the pattern we saw when looking at the proportion of participants who made any complaints
+</p>
+</div>
+<p>For this particular metric (average number of statements regarding law enforcement per person), Haywood shines. When we compare Haywood on a county level, we find only New Hanover can begin to compete, with most other counties averaging fewer than 0.7 complaints per person.</p>
+
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-5"></span>
+<img src="coocli_files/figure-html/unnamed-chunk-5-1.png" alt="Haywood had 1.12 complaints per survey response on average. New Hanover was next with 1.02 complaints; all other counties had significantly fewer." width="672" />
+<p class="caption">
+Figure 1.3: Haywood had 1.12 complaints per survey response on average. New Hanover was next with 1.02 complaints; all other counties had significantly fewer.
+</p>
+</div>
+<p>The connection between rurality and infractions by law enforcement officers is driven by the <em>outrageous</em> frequency of arrests and confiscations in Haywood. Nearly <em>half</em> of the 65 respondents from Haywood reported <em>either <em>confiscation of</em> or <em>arrest for</em></em> supplies they received legally from NCHRC. This is in fact the one thing separating Haywood from the other counties. Once these questions are removed from the analysis, no significant relationship with rurality remains.</p>
+<p>After initial analysis linking rurality to arrest/confiscation, we combine the following three questions into a giant ‘or’ statement as follows</p>
+<ul>
+<li>Law enforcement arrested me for my supplies … OR …</li>
+<li>Law enforcement confiscated my supplies … OR …</li>
+<li>Law enforcement confiscated my card</li>
+</ul>
+<p>Below we examine the proportion of folks who identified <em>any of those statements</em> across counties. We also examine the complement subset of Law enforcement questions (i.e. all law enforcement statements excluding the 3 statements above.) by rurality to conclude that any relationship between negative law enforcement encounters and rurality was driven solely by arrests/confiscations in Haywood.</p>
+
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-6"></span>
+<img src="coocli_files/figure-html/unnamed-chunk-6-1.png" alt="Confiscations of and arrests for supplies legally obtained from NCHRC are extremely high in Haywood county, with nearly 50% of survey participants from Haywood reporting they have experienced at least one of these infractions." width="672" />
+<p class="caption">
+Figure 1.4: Confiscations of and arrests for supplies legally obtained from NCHRC are extremely high in Haywood county, with nearly 50% of survey participants from Haywood reporting they have experienced at least one of these infractions.
+</p>
+</div>
+<p>We also examine the complement subset of Law enforcement questions (i.e. all law enforcement statements excluding the 3 statements above.) by rurality to conclude that any relationship that appeared between negative law enforcement encounters and rurality was driven solely by arrests/confiscations in Haywood.</p>
+
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-7"></span>
+<img src="coocli_files/figure-html/unnamed-chunk-7-1.png" alt="Any relationship between negative law enforcement encounters and rurality was driven solely by arrests/confiscations in Haywood." width="672" />
+<p class="caption">
+Figure 1.5: Any relationship between negative law enforcement encounters and rurality was driven solely by arrests/confiscations in Haywood.
+</p>
+</div>
+<p>These are problems specific to Haywood, and we do not have sufficient data to claim a link with rurality on any broader scale. One thing seems clear - it doesn’t seem that Haywood PD are behaving this way out of <em>ignorance</em> - to the contrary, participants in Haywood <em>did not</em> report that officers were <em>not familiar</em> with NCHRC at any notable rate. That problem (officers’ proclaimed ignorance of NCHRC) is more frequent in New Hanover county, based on our analysis.</p>
+
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-8"></span>
+<img src="coocli_files/figure-html/unnamed-chunk-8-1.png" alt="Participants in Haywood did not report that officers were not familiar with NCHRC at any notable rate." width="672" />
+<p class="caption">
+Figure 1.6: Participants in Haywood <em>did not</em> report that officers were <em>not familiar</em> with NCHRC at any notable rate.
+</p>
+</div>
+<p>In Conclusion, it seems inappropriate to attribute any difference in the law enforcement questions to rurality when it’s more clearly a problem with Haywood, and most specifically a problem with confiscation of/arrest for supplies.</p>
+<p>With a more robust survey of participants, perhaps including more local measures of rurality (as opposed to a county-wide labeling approach), we might be able to learn more about how police departments differ in their handling of NCHRC participants.</p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="race-and-statements-about-law-enforcement.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-RuralLaw.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["coocli.pdf", "coocli.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Other Rurality | COOCLI Survey Analysis</title>
+  <meta name="description" content="Shaina’s analytical results from the COOCLI survey." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Other Rurality | COOCLI Survey Analysis" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Shaina’s analytical results from the COOCLI survey." />
+  <meta name="github-repo" content="rstudio/coocli-master" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Other Rurality | COOCLI Survey Analysis" />
+  
+  <meta name="twitter:description" content="Shaina’s analytical results from the COOCLI survey." />
+  
+
+<meta name="author" content="Shaina Race Bennett" />
+
+
+<meta name="date" content="2020-12-16" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="rurality-and-law.html"/>
+<link rel="next" href="race-and-statements-about-law-enforcement.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="libs/d3-4.5.0/d3.min.js"></script>
+<script src="libs/sankey-1/sankey.js"></script>
+<script src="libs/sankeyNetwork-binding-0.4/sankeyNetwork.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">COOCLI Survey</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Goals for Research</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="rurality-and-law.html"><a href="rurality-and-law.html"><i class="fa fa-check"></i><b>1</b> Rurality and Law</a><ul>
+<li class="chapter" data-level="1.1" data-path="rurality-and-law.html"><a href="rurality-and-law.html#conclusions-from-this-analysis"><i class="fa fa-check"></i><b>1.1</b> Conclusions from this analysis</a></li>
+<li class="chapter" data-level="1.2" data-path="rurality-and-law.html"><a href="rurality-and-law.html#analysis"><i class="fa fa-check"></i><b>1.2</b> Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="other-rurality.html"><a href="other-rurality.html"><i class="fa fa-check"></i><b>2</b> Other Rurality</a><ul>
+<li class="chapter" data-level="2.1" data-path="other-rurality.html"><a href="other-rurality.html#conclusions-from-this-analysis-1"><i class="fa fa-check"></i><b>2.1</b> Conclusions from this Analysis</a></li>
+<li class="chapter" data-level="2.2" data-path="other-rurality.html"><a href="other-rurality.html#analysis-1"><i class="fa fa-check"></i><b>2.2</b> Analysis</a></li>
+<li class="chapter" data-level="2.3" data-path="other-rurality.html"><a href="other-rurality.html#statements"><i class="fa fa-check"></i><b>2.3</b> Statements</a></li>
+<li class="chapter" data-level="2.4" data-path="other-rurality.html"><a href="other-rurality.html#barriers-to-treatment"><i class="fa fa-check"></i><b>2.4</b> Barriers to Treatment</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="race-and-statements-about-law-enforcement.html"><a href="race-and-statements-about-law-enforcement.html"><i class="fa fa-check"></i><b>3</b> Race and Statements about Law Enforcement</a><ul>
+<li class="chapter" data-level="3.1" data-path="race-and-statements-about-law-enforcement.html"><a href="race-and-statements-about-law-enforcement.html#conclusions-from-this-analysis-2"><i class="fa fa-check"></i><b>3.1</b> Conclusions from this analysis</a></li>
+<li class="chapter" data-level="3.2" data-path="race-and-statements-about-law-enforcement.html"><a href="race-and-statements-about-law-enforcement.html#analysis-2"><i class="fa fa-check"></i><b>3.2</b> Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html"><i class="fa fa-check"></i><b>4</b> Drug-use profiles</a><ul>
+<li class="chapter" data-level="4.1" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html#conclusions-from-this-analysis-3"><i class="fa fa-check"></i><b>4.1</b> Conclusions from this analysis</a></li>
+<li class="chapter" data-level="4.2" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html#analysis-3"><i class="fa fa-check"></i><b>4.2</b> Analysis</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html#rurality"><i class="fa fa-check"></i><b>4.2.1</b> Rurality</a></li>
+<li class="chapter" data-level="4.2.2" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html#services-of-interest"><i class="fa fa-check"></i><b>4.2.2</b> Services of Interest</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="sample-sizes-across-key-demographics.html"><a href="sample-sizes-across-key-demographics.html"><i class="fa fa-check"></i><b>5</b> Sample Sizes across key demographics</a><ul>
+<li class="chapter" data-level="5.1" data-path="sample-sizes-across-key-demographics.html"><a href="sample-sizes-across-key-demographics.html#conclusions-from-this-analysis-4"><i class="fa fa-check"></i><b>5.1</b> Conclusions from this analysis</a></li>
+<li class="chapter" data-level="5.2" data-path="sample-sizes-across-key-demographics.html"><a href="sample-sizes-across-key-demographics.html#analysis-4"><i class="fa fa-check"></i><b>5.2</b> Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html"><i class="fa fa-check"></i><b>6</b> Complete County Profiles</a><ul>
+<li class="chapter" data-level="6.1" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#harm-reduction-profiles-of-each-county"><i class="fa fa-check"></i><b>6.1</b> Harm Reduction Profiles of each county</a></li>
+<li class="chapter" data-level="6.2" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#reasons-for-using-exchange"><i class="fa fa-check"></i><b>6.2</b> Reasons for Using Exchange</a></li>
+<li class="chapter" data-level="6.3" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#law-enforcement-interaction"><i class="fa fa-check"></i><b>6.3</b> Law Enforcement Interaction</a></li>
+<li class="chapter" data-level="6.4" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#statements-1"><i class="fa fa-check"></i><b>6.4</b> Statements</a></li>
+<li class="chapter" data-level="6.5" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#services-of-interest-1"><i class="fa fa-check"></i><b>6.5</b> Services of Interest</a></li>
+<li class="chapter" data-level="6.6" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#frequency"><i class="fa fa-check"></i><b>6.6</b> Frequency</a></li>
+<li class="chapter" data-level="6.7" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#tenure"><i class="fa fa-check"></i><b>6.7</b> Tenure</a></li>
+<li class="chapter" data-level="6.8" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#age-distribution"><i class="fa fa-check"></i><b>6.8</b> Age Distribution</a></li>
+<li class="chapter" data-level="6.9" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#gender-distribution"><i class="fa fa-check"></i><b>6.9</b> Gender Distribution</a></li>
+<li class="chapter" data-level="6.10" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#raceethnicity-distribution"><i class="fa fa-check"></i><b>6.10</b> Race/Ethnicity Distribution</a></li>
+<li class="chapter" data-level="6.11" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#tenure-and-frequency"><i class="fa fa-check"></i><b>6.11</b> Tenure and Frequency</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="experiments-that-continue.html"><a href="experiments-that-continue.html"><i class="fa fa-check"></i><b>7</b> Experiments that Continue</a><ul>
+<li class="chapter" data-level="7.1" data-path="experiments-that-continue.html"><a href="experiments-that-continue.html#conclusions-from-this-section"><i class="fa fa-check"></i><b>7.1</b> Conclusions from this section</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">COOCLI Survey Analysis</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="other-rurality" class="section level1">
+<h1><span class="header-section-number">2</span> Other Rurality</h1>
+<div id="conclusions-from-this-analysis-1" class="section level2">
+<h2><span class="header-section-number">2.1</span> Conclusions from this Analysis</h2>
+<ul>
+<li>As rurality increases, the proportion of respondents reporting increased condom usage since participating in the exchange decreases.</li>
+<li>As rurality increases, it appears the strain on NCHRC staff also grows.</li>
+<li>Urban respondents have 25% <em>higher</em> odds of reporting barriers in their attempt to access treatment than their rural counterparts.</li>
+</ul>
+</div>
+<div id="analysis-1" class="section level2">
+<h2><span class="header-section-number">2.2</span> Analysis</h2>
+
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-9"></span>
+<img src="coocli_files/figure-html/unnamed-chunk-9-1.png" alt="A one unit increase in rural score corresponds to nearly a doubling of the odds of using meth and presciption stimulants." width="672" />
+<p class="caption">
+Figure 2.1: A one unit increase in rural score corresponds to nearly a doubling of the odds of using meth and presciption stimulants.
+</p>
+</div>
+<pre><code>## 
+## Call:
+## glm(formula = HRCondomsMoreOften ~ rural, family = &quot;binomial&quot;)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -1.9645  -1.1400   0.7410   0.9615   1.2153  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)    
+## (Intercept)   2.3932     0.3587   6.671 2.53e-11 ***
+## rural        -0.6205     0.1282  -4.839 1.31e-06 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 515.99  on 414  degrees of freedom
+## Residual deviance: 491.22  on 413  degrees of freedom
+## AIC: 495.22
+## 
+## Number of Fisher Scoring iterations: 4</code></pre>
+<pre><code>## CondomsMoreOften Odds Ratio (unit increase rurality):  0.537688</code></pre>
+</div>
+<div id="statements" class="section level2">
+<h2><span class="header-section-number">2.3</span> Statements</h2>
+<p>There was also a weak relationship between rurality and the likelihood that an individual would claim that the exchange needs more staff in their area.</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-10"></span>
+<img src="coocli_files/figure-html/unnamed-chunk-10-1.png" alt="As rurality increases, it appears the strain on NCHRC staff also grows." width="672" />
+<p class="caption">
+Figure 2.2: As rurality increases, it appears the strain on NCHRC staff also grows.
+</p>
+</div>
+<pre><code>## 
+## Call:
+## glm(formula = StatementsNeedStaff ~ rural, family = &quot;binomial&quot;)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -1.4325  -1.2467   0.9422   1.1097   1.1982  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)  
+## (Intercept)  -0.2592     0.3047  -0.851   0.3950  
+## rural         0.2103     0.1157   1.817   0.0692 .
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 568.00  on 414  degrees of freedom
+## Residual deviance: 564.66  on 413  degrees of freedom
+## AIC: 568.66
+## 
+## Number of Fisher Scoring iterations: 4</code></pre>
+<pre><code>## StatementsNeedStaff Odds Ratio (unit increase rurality):  1.234098</code></pre>
+</div>
+<div id="barriers-to-treatment" class="section level2">
+<h2><span class="header-section-number">2.4</span> Barriers to Treatment</h2>
+<p>When it comes to participants who sought treatment but were unable to access it for any reason, we were surprised to learn that such experiences were generally more likely to happen in urban areas than in rural areas. This result shows statistical significance in this dataset, although we didn’t see the same granularity of the relationship with the <em>levels</em> of rurality that we saw in previous charts.</p>
+
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-11"></span>
+<img src="coocli_files/figure-html/unnamed-chunk-11-1.png" alt="A one unit increase in rural score corresponds to 20% reduction in the odds of reporting an inability to access desired treatment." width="672" />
+<p class="caption">
+Figure 2.3: A one unit increase in rural score corresponds to 20% reduction in the odds of reporting an inability to access desired treatment.
+</p>
+</div>
+<pre><code>## 
+## Call:
+## glm(formula = SoughtTreatmentUnableAccess ~ rural.binary, family = &quot;binomial&quot;)
+## 
+## Deviance Residuals: 
+##    Min      1Q  Median      3Q     Max  
+## -1.276  -1.076   1.082   1.082   1.283  
+## 
+## Coefficients:
+##              Estimate Std. Error z value Pr(&gt;|z|)  
+## (Intercept)    0.2293     0.1360   1.686   0.0919 .
+## rural.binary  -0.4733     0.2049  -2.310   0.0209 *
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 543.39  on 391  degrees of freedom
+## Residual deviance: 538.01  on 390  degrees of freedom
+##   (23 observations deleted due to missingness)
+## AIC: 542.01
+## 
+## Number of Fisher Scoring iterations: 3</code></pre>
+<pre><code>## SoughtTreatmentUnableToAccess Odds Ratio (rural vs urban):  0.6229508</code></pre>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="rurality-and-law.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="race-and-statements-about-law-enforcement.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/025-ruralHR.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["coocli.pdf", "coocli.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

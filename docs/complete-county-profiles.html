@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>6 Complete County Profiles | COOCLI Survey Analysis</title>
+  <meta name="description" content="Shaina’s analytical results from the COOCLI survey." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="6 Complete County Profiles | COOCLI Survey Analysis" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Shaina’s analytical results from the COOCLI survey." />
+  <meta name="github-repo" content="rstudio/coocli-master" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="6 Complete County Profiles | COOCLI Survey Analysis" />
+  
+  <meta name="twitter:description" content="Shaina’s analytical results from the COOCLI survey." />
+  
+
+<meta name="author" content="Shaina Race Bennett" />
+
+
+<meta name="date" content="2020-12-16" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="sample-sizes-across-key-demographics.html"/>
+<link rel="next" href="experiments-that-continue.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="libs/d3-4.5.0/d3.min.js"></script>
+<script src="libs/sankey-1/sankey.js"></script>
+<script src="libs/sankeyNetwork-binding-0.4/sankeyNetwork.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">COOCLI Survey</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Goals for Research</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="rurality-and-law.html"><a href="rurality-and-law.html"><i class="fa fa-check"></i><b>1</b> Rurality and Law</a><ul>
+<li class="chapter" data-level="1.1" data-path="rurality-and-law.html"><a href="rurality-and-law.html#conclusions-from-this-analysis"><i class="fa fa-check"></i><b>1.1</b> Conclusions from this analysis</a></li>
+<li class="chapter" data-level="1.2" data-path="rurality-and-law.html"><a href="rurality-and-law.html#analysis"><i class="fa fa-check"></i><b>1.2</b> Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="other-rurality.html"><a href="other-rurality.html"><i class="fa fa-check"></i><b>2</b> Other Rurality</a><ul>
+<li class="chapter" data-level="2.1" data-path="other-rurality.html"><a href="other-rurality.html#conclusions-from-this-analysis-1"><i class="fa fa-check"></i><b>2.1</b> Conclusions from this Analysis</a></li>
+<li class="chapter" data-level="2.2" data-path="other-rurality.html"><a href="other-rurality.html#analysis-1"><i class="fa fa-check"></i><b>2.2</b> Analysis</a></li>
+<li class="chapter" data-level="2.3" data-path="other-rurality.html"><a href="other-rurality.html#statements"><i class="fa fa-check"></i><b>2.3</b> Statements</a></li>
+<li class="chapter" data-level="2.4" data-path="other-rurality.html"><a href="other-rurality.html#barriers-to-treatment"><i class="fa fa-check"></i><b>2.4</b> Barriers to Treatment</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="race-and-statements-about-law-enforcement.html"><a href="race-and-statements-about-law-enforcement.html"><i class="fa fa-check"></i><b>3</b> Race and Statements about Law Enforcement</a><ul>
+<li class="chapter" data-level="3.1" data-path="race-and-statements-about-law-enforcement.html"><a href="race-and-statements-about-law-enforcement.html#conclusions-from-this-analysis-2"><i class="fa fa-check"></i><b>3.1</b> Conclusions from this analysis</a></li>
+<li class="chapter" data-level="3.2" data-path="race-and-statements-about-law-enforcement.html"><a href="race-and-statements-about-law-enforcement.html#analysis-2"><i class="fa fa-check"></i><b>3.2</b> Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html"><i class="fa fa-check"></i><b>4</b> Drug-use profiles</a><ul>
+<li class="chapter" data-level="4.1" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html#conclusions-from-this-analysis-3"><i class="fa fa-check"></i><b>4.1</b> Conclusions from this analysis</a></li>
+<li class="chapter" data-level="4.2" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html#analysis-3"><i class="fa fa-check"></i><b>4.2</b> Analysis</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html#rurality"><i class="fa fa-check"></i><b>4.2.1</b> Rurality</a></li>
+<li class="chapter" data-level="4.2.2" data-path="drug-use-profiles.html"><a href="drug-use-profiles.html#services-of-interest"><i class="fa fa-check"></i><b>4.2.2</b> Services of Interest</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="sample-sizes-across-key-demographics.html"><a href="sample-sizes-across-key-demographics.html"><i class="fa fa-check"></i><b>5</b> Sample Sizes across key demographics</a><ul>
+<li class="chapter" data-level="5.1" data-path="sample-sizes-across-key-demographics.html"><a href="sample-sizes-across-key-demographics.html#conclusions-from-this-analysis-4"><i class="fa fa-check"></i><b>5.1</b> Conclusions from this analysis</a></li>
+<li class="chapter" data-level="5.2" data-path="sample-sizes-across-key-demographics.html"><a href="sample-sizes-across-key-demographics.html#analysis-4"><i class="fa fa-check"></i><b>5.2</b> Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html"><i class="fa fa-check"></i><b>6</b> Complete County Profiles</a><ul>
+<li class="chapter" data-level="6.1" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#harm-reduction-profiles-of-each-county"><i class="fa fa-check"></i><b>6.1</b> Harm Reduction Profiles of each county</a></li>
+<li class="chapter" data-level="6.2" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#reasons-for-using-exchange"><i class="fa fa-check"></i><b>6.2</b> Reasons for Using Exchange</a></li>
+<li class="chapter" data-level="6.3" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#law-enforcement-interaction"><i class="fa fa-check"></i><b>6.3</b> Law Enforcement Interaction</a></li>
+<li class="chapter" data-level="6.4" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#statements-1"><i class="fa fa-check"></i><b>6.4</b> Statements</a></li>
+<li class="chapter" data-level="6.5" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#services-of-interest-1"><i class="fa fa-check"></i><b>6.5</b> Services of Interest</a></li>
+<li class="chapter" data-level="6.6" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#frequency"><i class="fa fa-check"></i><b>6.6</b> Frequency</a></li>
+<li class="chapter" data-level="6.7" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#tenure"><i class="fa fa-check"></i><b>6.7</b> Tenure</a></li>
+<li class="chapter" data-level="6.8" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#age-distribution"><i class="fa fa-check"></i><b>6.8</b> Age Distribution</a></li>
+<li class="chapter" data-level="6.9" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#gender-distribution"><i class="fa fa-check"></i><b>6.9</b> Gender Distribution</a></li>
+<li class="chapter" data-level="6.10" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#raceethnicity-distribution"><i class="fa fa-check"></i><b>6.10</b> Race/Ethnicity Distribution</a></li>
+<li class="chapter" data-level="6.11" data-path="complete-county-profiles.html"><a href="complete-county-profiles.html#tenure-and-frequency"><i class="fa fa-check"></i><b>6.11</b> Tenure and Frequency</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="experiments-that-continue.html"><a href="experiments-that-continue.html"><i class="fa fa-check"></i><b>7</b> Experiments that Continue</a><ul>
+<li class="chapter" data-level="7.1" data-path="experiments-that-continue.html"><a href="experiments-that-continue.html#conclusions-from-this-section"><i class="fa fa-check"></i><b>7.1</b> Conclusions from this section</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">COOCLI Survey Analysis</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="complete-county-profiles" class="section level1">
+<h1><span class="header-section-number">6</span> Complete County Profiles</h1>
+<p>These heatmaps and charts came unchanged from the DemoGraphics Powerpoint that was part of the initial delivery.</p>
+<div id="harm-reduction-profiles-of-each-county" class="section level2">
+<h2><span class="header-section-number">6.1</span> Harm Reduction Profiles of each county</h2>
+<p><img src="_book/DemographicsSlidePics/heat-harm.tif" style="display: block; margin: auto;" /></p>
+</div>
+<div id="reasons-for-using-exchange" class="section level2">
+<h2><span class="header-section-number">6.2</span> Reasons for Using Exchange</h2>
+<p><img src="_book/DemographicsSlidePics/heat-reasons.tif" style="display: block; margin: auto;" /></p>
+</div>
+<div id="law-enforcement-interaction" class="section level2">
+<h2><span class="header-section-number">6.3</span> Law Enforcement Interaction</h2>
+<p><img src="_book/DemographicsSlidePics/heat-law.tif" style="display: block; margin: auto;" /></p>
+</div>
+<div id="statements-1" class="section level2">
+<h2><span class="header-section-number">6.4</span> Statements</h2>
+<p><img src="_book/DemographicsSlidePics/heat-statements.tif" style="display: block; margin: auto;" /></p>
+</div>
+<div id="services-of-interest-1" class="section level2">
+<h2><span class="header-section-number">6.5</span> Services of Interest</h2>
+<p><img src="_book/DemographicsSlidePics/heat-services.tif" style="display: block; margin: auto;" /></p>
+</div>
+<div id="frequency" class="section level2">
+<h2><span class="header-section-number">6.6</span> Frequency</h2>
+<p><img src="_book/DemographicsSlidePics/heat-frequency.tif" style="display: block; margin: auto;" /></p>
+</div>
+<div id="tenure" class="section level2">
+<h2><span class="header-section-number">6.7</span> Tenure</h2>
+<p><img src="_book/DemographicsSlidePics/heat-tenure.tif" style="display: block; margin: auto;" /></p>
+</div>
+<div id="age-distribution" class="section level2">
+<h2><span class="header-section-number">6.8</span> Age Distribution</h2>
+<p><img src="_book/DemographicsSlidePics/heat-age.tif" style="display: block; margin: auto;" /></p>
+<p><img src="_book/DemographicsSlidePics/age-distribution.tif" style="display: block; margin: auto;" /></p>
+<p><img src="_book/DemographicsSlidePics/age-overall.tif" style="display: block; margin: auto;" /></p>
+</div>
+<div id="gender-distribution" class="section level2">
+<h2><span class="header-section-number">6.9</span> Gender Distribution</h2>
+<p><img src="_book/DemographicsSlidePics/gender-distribution.tif" style="display: block; margin: auto;" /></p>
+<p><img src="_book/DemographicsSlidePics/gender-overall.tif" style="display: block; margin: auto;" /></p>
+</div>
+<div id="raceethnicity-distribution" class="section level2">
+<h2><span class="header-section-number">6.10</span> Race/Ethnicity Distribution</h2>
+<p><img src="_book/DemographicsSlidePics/race-distribution.tif" style="display: block; margin: auto;" /></p>
+<p><img src="_book/DemographicsSlidePics/race-overall.tif" style="display: block; margin: auto;" /></p>
+</div>
+<div id="tenure-and-frequency" class="section level2">
+<h2><span class="header-section-number">6.11</span> Tenure and Frequency</h2>
+
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-42"></span>
+<img src="coocli_files/figure-html/unnamed-chunk-42-1.png" alt="Roughly three quarters of participants have been with NCHRC about 1 year or less." width="672" />
+<p class="caption">
+Figure 6.1: Roughly three quarters of participants have been with NCHRC about 1 year or less.
+</p>
+</div>
+
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-43"></span>
+<img src="coocli_files/figure-html/unnamed-chunk-43-1.png" alt="Most participants come once a week." width="672" />
+<p class="caption">
+Figure 6.2: Most participants come once a week.
+</p>
+</div>
+<p>If we want to see whether seasoned participants plan more and come less, we can create a numeric frequency variable that assigns a rough estimate of the number of times they visit the exchange each month. For full transparency, that numeric variable is defined as follows:</p>
+<table>
+<caption><span id="tab:unnamed-chunk-44">Table 6.1: </span>Engineered Feature: exchange visits per month</caption>
+<thead>
+<tr class="header">
+<th align="left">frequency</th>
+<th align="right">Visits.per.Month</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Every few weeks</td>
+<td align="right">1.3</td>
+</tr>
+<tr class="even">
+<td align="left">Once a month</td>
+<td align="right">1.0</td>
+</tr>
+<tr class="odd">
+<td align="left">Once a week</td>
+<td align="right">4.0</td>
+</tr>
+<tr class="even">
+<td align="left">Several times a week</td>
+<td align="right">10.0</td>
+</tr>
+<tr class="odd">
+<td align="left">Several times a year</td>
+<td align="right">0.4</td>
+</tr>
+</tbody>
+</table>
+
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-45"></span>
+<img src="coocli_files/figure-html/unnamed-chunk-45-1.png" alt="Long tenured participants visit exchange less frequently." width="672" />
+<p class="caption">
+Figure 6.3: Long tenured participants visit exchange less frequently.
+</p>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sample-sizes-across-key-demographics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="experiments-that-continue.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/06-CountyHeatmaps.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["coocli.pdf", "coocli.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
